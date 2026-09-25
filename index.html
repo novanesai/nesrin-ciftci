@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="UGC & AI Collaby Academy — UGC ve yapay zekâ destekli içerik üretimini adım adım öğren." />
+  <title>UGC & AI Collaby Academy</title>
+  <style>
+    :root{--bg:#f8f6f2;--surface:#fff;--ink:#1d1c1a;--muted:#6c6963;--line:#e5e0d7;--accent:#d9755d;--accent-ink:#fff;--max:1180px;--radius:28px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}
+    a{color:inherit;text-decoration:none}.wrap{width:min(calc(100% - 40px),var(--max));margin:auto}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}.brand{font-weight:800;letter-spacing:-.03em}.navlinks{display:flex;gap:26px;font-size:14px;color:var(--muted)}.navcta,.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 20px;border-radius:999px;background:var(--ink);color:#fff;font-weight:700}
+    .hero{padding:58px 0 88px}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:48px;align-items:center}.eyebrow{font-size:13px;text-transform:uppercase;letter-spacing:.14em;color:var(--accent);font-weight:800}.hero h1{font-size:clamp(46px,7vw,86px);line-height:.98;letter-spacing:-.065em;margin:18px 0 24px}.hero p{font-size:19px;color:var(--muted);max-width:640px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn.alt{background:transparent;color:var(--ink);border:1px solid var(--line)}
+    .visual{background:#ece6dd;border-radius:40px;min-height:520px;position:relative;overflow:hidden;padding:18px;display:grid;place-items:end}.visual img{width:100%;height:100%;object-fit:cover;border-radius:30px;min-height:484px;background:#ddd}
+    section{padding:92px 0}.section-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:34px}.section-head h2{font-size:clamp(34px,5vw,58px);line-height:1;letter-spacing:-.05em;margin:0}.section-head p{max-width:480px;color:var(--muted);margin:0}
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px}.card h3{margin:0 0 10px;font-size:22px}.card p{margin:0;color:var(--muted)}
+    .step{min-height:230px;display:flex;flex-direction:column;justify-content:space-between}.num{font-size:14px;color:var(--accent);font-weight:800}
+    .feature{display:grid;grid-template-columns:.9fr 1.1fr;gap:22px;align-items:stretch}.feature-main{background:#23211f;color:#fff;border-radius:var(--radius);padding:38px;min-height:380px}.feature-main p{color:#c9c4bc}.feature-side{display:grid;gap:18px}.mini{background:#fff;border:1px solid var(--line);border-radius:24px;padding:26px}
+    .faq{border-top:1px solid var(--line)}details{padding:22px 0;border-bottom:1px solid var(--line)}summary{cursor:pointer;font-weight:750;font-size:18px}
+    .cta{background:#1f1e1b;color:#fff;border-radius:36px;padding:48px;display:flex;justify-content:space-between;gap:30px;align-items:end}.cta p{color:#c9c4bc;max-width:650px}.cta .btn{background:#fff;color:#1f1e1b}
+    footer{padding:40px 0 60px;color:var(--muted);font-size:14px}
+    @media(max-width:900px){.hero-grid,.feature{grid-template-columns:1fr}.grid3{grid-template-columns:1fr 1fr}.navlinks{display:none}.hero{padding-top:34px}.visual{min-height:420px}.cta{flex-direction:column;align-items:flex-start}}
+    @media(max-width:620px){.wrap{width:min(calc(100% - 28px),var(--max))}.grid3{grid-template-columns:1fr}.hero h1{font-size:52px}.hero p{font-size:17px}.section-head{display:block}.section-head p{margin-top:14px}.visual{min-height:340px}.visual img{min-height:304px}.cta{padding:30px;border-radius:28px}}
+  </style>
+</head>
+<body>
+  <header class="wrap nav">
+    <a class="brand" href="#">UGC & AI<br/>Collaby Academy</a>
+    <nav class="navlinks" aria-label="Ana navigasyon">
+      <a href="#program">Program</a><a href="#sistem">Sistem</a><a href="#sss">SSS</a>
+    </nav>
+    <a class="navcta" href="#basla">Başla</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">UGC × AI × Creator Education</div>
+          <h1>İçerik üretmeyi değil, içerik üreticisi olmayı öğren.</h1>
+          <p>UGC, yapay zekâ ve yaratıcı stratejiyi tek bir öğrenme sisteminde birleştir. Fikirden üretime, portföyden markaya kadar gerçek iş akışını adım adım öğren.</p>
+          <div class="actions"><a class="btn" href="#basla">Akademiyi keşfet</a><a class="btn alt" href="#program">Nasıl ilerliyor?</a></div>
+        </div>
+        <div class="visual" aria-label="Akademi görsel alanı">
+          <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=80" alt="Yaratıcı çalışma masasında içerik üretim süreci" loading="eager"/>
+        </div>
+      </div>
+    </section>
+
+    <section id="program">
+      <div class="wrap">
+        <div class="section-head"><h2>Öğrenme yolu<br/>net olsun.</h2><p>Başlangıç seviyesinden profesyonel içerik üretim alışkanlığına uzanan, uygulama ağırlıklı bir yapı.</p></div>
+        <div class="grid3">
+          <article class="card step"><span class="num">01 / TEMEL</span><div><h3>UGC temelleri</h3><p>Brief okuma, hook, senaryo, çekim dili ve içerik mantığını kavra.</p></div></article>
+          <article class="card step"><span class="num">02 / AI ÜRETİM</span><div><h3>AI ile hızlan</h3><p>Görsel, video, avatar ve yaratıcı prompt akışlarını sistemleştir.</p></div></article>
+          <article class="card step"><span class="num">03 / PORTFÖY</span><div><h3>Gerçek iş akışı</h3><p>İçeriklerini düzenle, sun, geri bildirim al ve portföyünü oluştur.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="sistem">
+      <div class="wrap feature">
+        <div class="feature-main"><div class="eyebrow" style="color:#e79b87">EĞİTİM SİSTEMİ</div><h2 style="font-size:clamp(36px,5vw,60px);line-height:1;letter-spacing:-.05em;margin:18px 0">Sadece ders değil.<br/>Uygulanabilir sistem.</h2><p>Her modül, öğrenme → uygulama → geri bildirim → portföy döngüsü üzerine kurulur.</p></div>
+        <div class="feature-side">
+          <article class="mini"><h3>Creative Brief</h3><p>Markanın ihtiyacını okuyup yaratıcı konsepte dönüştür.</p></article>
+          <article class="mini"><h3>Prompt Lab</h3><p>Tek seferlik prompt yerine tekrar kullanılabilir üretim sistemleri kur.</p></article>
+          <article class="mini"><h3>Mentörlük</h3><p>Takıldığın noktada yönlendirme, revizyon ve üretim geri bildirimi.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head"><h2>Öğrenirken<br/>üret.</h2><p>Akademinin merkezinde teori değil, çıktıya dönüşen üretim var.</p></div>
+        <div class="grid3">
+          <article class="card"><h3>İçerik fikri</h3><p>Trendleri körü körüne kopyalamadan kendi yaratıcı açını kur.</p></article>
+          <article class="card"><h3>AI workflow</h3><p>Metinden görsele, görselden videoya uzanan üretim zincirini kur.</p></article>
+          <article class="card"><h3>Sunum & portföy</h3><p>Ürettiğin içeriği markanın anlayacağı şekilde paketle.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="sss">
+      <div class="wrap">
+        <div class="section-head"><h2>Merak edilenler</h2><p>Başlamadan önce en çok sorulan konular.</p></div>
+        <div class="faq">
+          <details><summary>Hiç deneyimim yok, başarabilir miyim?</summary><p>Evet. Eğitim akışı temel kavramlardan başlar ve uygulama adımlarını kademeli olarak ilerletir.</p></details>
+          <details><summary>Mentörlük ücretli mi?</summary><p>Mentörlük modeli ve kapsamı seçilen programa göre ayrıca belirtilir.</p></details>
+          <details><summary>Telefonla içerik üretebilir miyim?</summary><p>Temel UGC üretimlerinin büyük bölümü mobil cihazla planlanabilecek şekilde kurgulanabilir.</p></details>
+          <details><summary>Portföyüm yoksa ne olacak?</summary><p>Program boyunca ürettiğin çalışmalar, düzenlenerek başlangıç portföyüne dönüştürülebilir.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section id="basla">
+      <div class="wrap cta">
+        <div><div class="eyebrow" style="color:#e79b87">SONRAKİ ADIM</div><h2 style="font-size:clamp(38px,5vw,64px);line-height:1;letter-spacing:-.05em;margin:16px 0">Kendi üretim sistemini kurmaya başla.</h2><p>Academy deneyimini hedefin, seviyen ve üretim alanın üzerinden şekillendir.</p></div>
+        <a class="btn" href="mailto:hello@example.com">Bilgi al</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">© 2026 UGC & AI Collaby Academy · Eğitim · UGC · AI Creative</footer>
+</body>
+</html>
