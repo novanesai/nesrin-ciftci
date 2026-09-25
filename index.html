@@ -1,105 +1,150 @@
 <!doctype html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="UGC & AI Collaby Academy — UGC ve yapay zekâ destekli içerik üretimini adım adım öğren." />
-  <title>UGC & AI Collaby Academy</title>
-  <style>
-    :root{--bg:#f8f6f2;--surface:#fff;--ink:#1d1c1a;--muted:#6c6963;--line:#e5e0d7;--accent:#d9755d;--accent-ink:#fff;--max:1180px;--radius:28px}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}
-    a{color:inherit;text-decoration:none}.wrap{width:min(calc(100% - 40px),var(--max));margin:auto}
-    .nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}.brand{font-weight:800;letter-spacing:-.03em}.navlinks{display:flex;gap:26px;font-size:14px;color:var(--muted)}.navcta,.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 20px;border-radius:999px;background:var(--ink);color:#fff;font-weight:700}
-    .hero{padding:58px 0 88px}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:48px;align-items:center}.eyebrow{font-size:13px;text-transform:uppercase;letter-spacing:.14em;color:var(--accent);font-weight:800}.hero h1{font-size:clamp(46px,7vw,86px);line-height:.98;letter-spacing:-.065em;margin:18px 0 24px}.hero p{font-size:19px;color:var(--muted);max-width:640px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn.alt{background:transparent;color:var(--ink);border:1px solid var(--line)}
-    .visual{background:#ece6dd;border-radius:40px;min-height:520px;position:relative;overflow:hidden;padding:18px;display:grid;place-items:end}.visual img{width:100%;height:100%;object-fit:cover;border-radius:30px;min-height:484px;background:#ddd}
-    section{padding:92px 0}.section-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:34px}.section-head h2{font-size:clamp(34px,5vw,58px);line-height:1;letter-spacing:-.05em;margin:0}.section-head p{max-width:480px;color:var(--muted);margin:0}
-    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px}.card h3{margin:0 0 10px;font-size:22px}.card p{margin:0;color:var(--muted)}
-    .step{min-height:230px;display:flex;flex-direction:column;justify-content:space-between}.num{font-size:14px;color:var(--accent);font-weight:800}
-    .feature{display:grid;grid-template-columns:.9fr 1.1fr;gap:22px;align-items:stretch}.feature-main{background:#23211f;color:#fff;border-radius:var(--radius);padding:38px;min-height:380px}.feature-main p{color:#c9c4bc}.feature-side{display:grid;gap:18px}.mini{background:#fff;border:1px solid var(--line);border-radius:24px;padding:26px}
-    .faq{border-top:1px solid var(--line)}details{padding:22px 0;border-bottom:1px solid var(--line)}summary{cursor:pointer;font-weight:750;font-size:18px}
-    .cta{background:#1f1e1b;color:#fff;border-radius:36px;padding:48px;display:flex;justify-content:space-between;gap:30px;align-items:end}.cta p{color:#c9c4bc;max-width:650px}.cta .btn{background:#fff;color:#1f1e1b}
-    footer{padding:40px 0 60px;color:var(--muted);font-size:14px}
-    @media(max-width:900px){.hero-grid,.feature{grid-template-columns:1fr}.grid3{grid-template-columns:1fr 1fr}.navlinks{display:none}.hero{padding-top:34px}.visual{min-height:420px}.cta{flex-direction:column;align-items:flex-start}}
-    @media(max-width:620px){.wrap{width:min(calc(100% - 28px),var(--max))}.grid3{grid-template-columns:1fr}.hero h1{font-size:52px}.hero p{font-size:17px}.section-head{display:block}.section-head p{margin-top:14px}.visual{min-height:340px}.visual img{min-height:304px}.cta{padding:30px;border-radius:28px}}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f5f0e8">
+<meta name="description" content="Nesrin Çiftçi — UGC & AI Collaby Academy öğrencisi ve partneri. Yapay zekâ, dijital pazarlama ve kişisel mentörlük desteği.">
+<title>Nesrin Çiftçi | UGC & AI Mentörlük</title>
+<style>
+:root{--cream:#f5f0e8;--paper:#fffdf9;--ink:#171717;--muted:#68635d;--green:#173b2d;--lilac:#c8b5e8;--lilac2:#eee6f8;--line:#ddd5c9;--white:#fff;--max:1180px;--r:28px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.12;background-image:radial-gradient(#171717 .5px,transparent .5px);background-size:7px 7px}
+a{color:inherit;text-decoration:none}.wrap{width:min(calc(100% - 40px),var(--max));margin:auto}.nav{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:18px 0;background:color-mix(in srgb,var(--cream) 88%,transparent);backdrop-filter:blur(14px)}.brand{font-weight:850;letter-spacing:-.04em;line-height:1.05}.brand small{display:block;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:5px}.navlinks{display:flex;gap:24px;font-size:13px;color:var(--muted)}.navlinks a:hover{color:var(--ink)}.navcta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 21px;border-radius:999px;background:var(--ink);color:#fff;font-weight:750;border:1px solid var(--ink);transition:.2s ease}.navcta:hover,.btn:hover{transform:translateY(-2px)}.btn.alt{background:transparent;color:var(--ink);border-color:var(--line)}
+.hero{padding:72px 0 96px}.hero-grid{display:grid;grid-template-columns:1fr .82fr;gap:64px;align-items:center}.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.16em;font-weight:850;color:#745a9a}.hero h1{font-family:Georgia,serif;font-weight:500;font-size:clamp(48px,7vw,88px);line-height:.94;letter-spacing:-.065em;margin:17px 0 25px;max-width:760px}.hero h1 em{font-style:normal;color:#72579a}.hero p{font-size:18px;color:var(--muted);max-width:650px}.actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:30px}.hero-card{position:relative;background:var(--green);border-radius:42px;padding:12px;min-height:610px}.hero-card img{width:100%;height:100%;min-height:586px;object-fit:cover;border-radius:34px;display:block}.hero-tag{position:absolute;left:28px;bottom:28px;background:rgba(255,253,249,.94);padding:12px 15px;border-radius:16px;font-size:11px;font-weight:800;max-width:230px}
+section{padding:92px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:34px}.section-head h2{font-family:Georgia,serif;font-size:clamp(38px,5vw,62px);font-weight:500;line-height:.98;letter-spacing:-.055em;margin:0}.section-head p{max-width:510px;color:var(--muted);margin:0}
+.story{display:grid;grid-template-columns:.75fr 1.25fr;gap:26px;align-items:stretch}.story-media{border-radius:var(--r);overflow:hidden;min-height:520px}.story-media img{width:100%;height:100%;object-fit:cover}.story-copy{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:42px}.story-copy h3{font-family:Georgia,serif;font-size:34px;font-weight:500;margin:0 0 20px}.story-copy p{color:var(--muted);font-size:17px}.note{display:inline-flex;background:var(--lilac2);padding:9px 12px;border-radius:999px;font-size:11px;font-weight:800;margin-top:12px}
+.academy{background:var(--green);color:#fff;border-radius:44px;padding:50px}.academy .section-head p{color:#d9e0db}.academy .section-head h2{color:#fff}.academy-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.academy-card{background:#f8f5ee;color:var(--ink);border-radius:24px;padding:28px;min-height:230px}.academy-card h3{margin:0 0 9px;font-size:23px}.academy-card p{color:var(--muted);margin:0}.academy-card strong{display:inline-block;margin-bottom:18px;color:#72579a}
+.mentor{display:grid;grid-template-columns:1fr 1fr;gap:18px}.mentor-main{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:40px}.mentor-main h3{font-family:Georgia,serif;font-size:42px;font-weight:500;line-height:1;margin:0 0 18px}.mentor-main p{color:var(--muted)}.mentor-price{margin:24px 0;padding:20px;border-radius:20px;background:var(--lilac2)}.mentor-price b{display:block;font-size:21px}.mentor-side{display:grid;grid-template-columns:1fr 1fr;gap:18px}.mini{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:26px}.mini h4{margin:0 0 8px;font-size:19px}.mini p{color:var(--muted);margin:0;font-size:14px}
+.works{display:grid;grid-template-columns:1.25fr .75fr;gap:18px}.work{overflow:hidden;border-radius:26px;background:#ddd;min-height:280px;position:relative}.work img{width:100%;height:100%;min-height:280px;object-fit:cover;display:block;transition:transform .5s}.work:hover img{transform:scale(1.025)}.work.main{grid-row:span 2;min-height:580px}.work.main img{min-height:580px}.work.bottom{grid-column:1/-1;min-height:330px}.work.bottom img{min-height:330px}.work-label{position:absolute;left:16px;bottom:16px;background:rgba(255,253,249,.9);border-radius:999px;padding:8px 12px;font-size:10px;font-weight:850}
+.match{background:#111;color:#fff;border-radius:44px;padding:48px}.match-grid{display:grid;grid-template-columns:1fr .8fr;gap:35px;align-items:center}.match h2{font-family:Georgia,serif;font-size:clamp(40px,5vw,68px);font-weight:500;line-height:.95;letter-spacing:-.05em;margin:14px 0 20px}.match p{color:#c8c5c0;max-width:620px}.match img{width:100%;border-radius:25px}.disclaimer{font-size:12px;color:#aaa;margin-top:22px}
+.faq{border-top:1px solid var(--line)}details{padding:22px 0;border-bottom:1px solid var(--line)}summary{cursor:pointer;font-weight:800;font-size:17px;list-style:none}summary::-webkit-details-marker{display:none}summary:after{content:"+";float:right;font-size:23px;font-weight:400}details[open] summary:after{content:"−"}details p{max-width:800px;color:var(--muted);margin:13px 0 0}
+.final{background:var(--lilac2);border-radius:44px;padding:55px}.final h2{font-family:Georgia,serif;font-weight:500;font-size:clamp(42px,6vw,72px);line-height:.95;letter-spacing:-.06em;margin:14px 0 18px}.final p{color:var(--muted);max-width:680px}.footer{padding:42px 0 100px;display:flex;justify-content:space-between;gap:30px;color:var(--muted);font-size:13px}.social{font-weight:750;color:var(--ink)}
+.mobile-cta{display:none}
+@media(max-width:900px){.hero-grid,.story,.mentor,.match-grid{grid-template-columns:1fr}.hero-card{min-height:480px}.hero-card img{min-height:456px}.academy-grid{grid-template-columns:1fr 1fr}.mentor-side{grid-template-columns:1fr 1fr}.works{grid-template-columns:1fr 1fr}.work.main{grid-row:auto;min-height:430px}.work.main img{min-height:430px}.work.bottom{grid-column:1/-1}.navlinks{display:none}}
+@media(max-width:620px){.wrap{width:min(calc(100% - 28px),var(--max))}.hero{padding:44px 0 70px}.hero h1{font-size:51px}.hero p{font-size:16px}.hero-card{min-height:410px;padding:8px;border-radius:30px}.hero-card img{min-height:394px;border-radius:24px}.section-head{display:block}.section-head p{margin-top:14px}.story-copy,.mentor-main{padding:28px}.academy,.match,.final{padding:28px;border-radius:30px}.academy-grid,.mentor-side,.works{grid-template-columns:1fr}.work.main,.work.main img{min-height:430px}.work.bottom,.work.bottom img{min-height:300px}.footer{display:block;padding-bottom:110px}.footer>div+div{margin-top:18px}.mobile-cta{display:block;position:fixed;z-index:30;bottom:12px;left:12px;right:12px}.mobile-cta a{width:100%;box-shadow:0 12px 30px rgba(0,0,0,.15)}}
+</style>
 </head>
 <body>
-  <header class="wrap nav">
-    <a class="brand" href="#">UGC & AI<br/>Collaby Academy</a>
-    <nav class="navlinks" aria-label="Ana navigasyon">
-      <a href="#program">Program</a><a href="#sistem">Sistem</a><a href="#sss">SSS</a>
-    </nav>
-    <a class="navcta" href="#basla">Başla</a>
-  </header>
+<header class="wrap nav">
+<a class="brand" href="#">NESRİN ÇİFTÇİ<small>Kişisel profesyonel web sitesi</small></a>
+<nav class="navlinks" aria-label="Ana navigasyon">
+<a href="#hikaye">Hikâyem</a><a href="#academy">Akademi</a><a href="#mentorluk">Mentörlük</a><a href="#calismalar">Çalışmalarım</a><a href="#sss">SSS</a>
+</nav>
+<a class="navcta" href="https://www.shopier.com/m/products.php" target="_blank" rel="noopener">Benimle Başla ↗</a>
+</header>
 
-  <main>
-    <section class="hero">
-      <div class="wrap hero-grid">
-        <div>
-          <div class="eyebrow">UGC × AI × Creator Education</div>
-          <h1>İçerik üretmeyi değil, içerik üreticisi olmayı öğren.</h1>
-          <p>UGC, yapay zekâ ve yaratıcı stratejiyi tek bir öğrenme sisteminde birleştir. Fikirden üretime, portföyden markaya kadar gerçek iş akışını adım adım öğren.</p>
-          <div class="actions"><a class="btn" href="#basla">Akademiyi keşfet</a><a class="btn alt" href="#program">Nasıl ilerliyor?</a></div>
-        </div>
-        <div class="visual" aria-label="Akademi görsel alanı">
-          <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=80" alt="Yaratıcı çalışma masasında içerik üretim süreci" loading="eager"/>
-        </div>
-      </div>
-    </section>
+<main>
+<section class="hero">
+<div class="wrap hero-grid">
+<div>
+<div class="eyebrow">UGC & AI COLLABY ACADEMY · ÖĞRENCİ & PARTNER</div>
+<h1>Öğren. Üret. <em>Kendi yolunu oluştur.</em></h1>
+<p>Ben Nesrin. Yapay zekâ, UGC ve dijital pazarlama alanında öğrendiklerimi ve deneyimlerimi, sıfırdan başlayanlarla paylaşarak kişisel mentörlük desteği sunuyorum.</p>
+<div class="actions"><a class="btn" href="https://www.shopier.com/m/products.php" target="_blank" rel="noopener">Benimle Başla, Akademiye Kat ↗</a><a class="btn alt" href="#hikaye">Hikâyemi keşfet ↓</a></div>
+</div>
+<div class="hero-card">
+<img src="assets/nesrin-portrait.jpg" alt="Nesrin Çiftçi" fetchpriority="high">
+<div class="hero-tag">Bu site Nesrin Çiftçi'nin kişisel profesyonel web sitesidir.</div>
+</div>
+</div>
+</section>
 
-    <section id="program">
-      <div class="wrap">
-        <div class="section-head"><h2>Öğrenme yolu<br/>net olsun.</h2><p>Başlangıç seviyesinden profesyonel içerik üretim alışkanlığına uzanan, uygulama ağırlıklı bir yapı.</p></div>
-        <div class="grid3">
-          <article class="card step"><span class="num">01 / TEMEL</span><div><h3>UGC temelleri</h3><p>Brief okuma, hook, senaryo, çekim dili ve içerik mantığını kavra.</p></div></article>
-          <article class="card step"><span class="num">02 / AI ÜRETİM</span><div><h3>AI ile hızlan</h3><p>Görsel, video, avatar ve yaratıcı prompt akışlarını sistemleştir.</p></div></article>
-          <article class="card step"><span class="num">03 / PORTFÖY</span><div><h3>Gerçek iş akışı</h3><p>İçeriklerini düzenle, sun, geri bildirim al ve portföyünü oluştur.</p></div></article>
-        </div>
-      </div>
-    </section>
+<section id="hikaye">
+<div class="wrap">
+<div class="section-head"><h2>Merhaba,<br>ben Nesrin.</h2><p>42 yaşında bir girişimci, UGC & AI Collaby Academy öğrencisi ve partneriyim.</p></div>
+<div class="story">
+<div class="story-media"><img src="assets/nesrin-cafe.jpg" alt="Nesrin'in çalışma sürecinden bir kare" loading="lazy"></div>
+<div class="story-copy">
+<h3>Ben de bir adımla başladım.</h3>
+<p>Son 1 yıldır yapay zekânın ve dijital pazarlamanın kalbinde yer alıyorum; öğreniyor, üretiyor ve kendimi geliştiriyorum. Bu süreçte öğrendiklerimi, deneyimlerimi ve gördüğüm dönüşümü şimdi sıfırdan başlayanlarla paylaşmak istiyorum.</p>
+<p>Akademiye benimle birlikte katıldığında seni sadece bir eğitime yönlendirmiyorum. Girişimcilik sürecinde edindiğim bilgi ve deneyimler doğrultusunda sana kişisel destek sunuyorum.</p>
+<span class="note">Kişisel marka · AI · Dijital pazarlama</span>
+</div>
+</div>
+</div>
+</section>
 
-    <section id="sistem">
-      <div class="wrap feature">
-        <div class="feature-main"><div class="eyebrow" style="color:#e79b87">EĞİTİM SİSTEMİ</div><h2 style="font-size:clamp(36px,5vw,60px);line-height:1;letter-spacing:-.05em;margin:18px 0">Sadece ders değil.<br/>Uygulanabilir sistem.</h2><p>Her modül, öğrenme → uygulama → geri bildirim → portföy döngüsü üzerine kurulur.</p></div>
-        <div class="feature-side">
-          <article class="mini"><h3>Creative Brief</h3><p>Markanın ihtiyacını okuyup yaratıcı konsepte dönüştür.</p></article>
-          <article class="mini"><h3>Prompt Lab</h3><p>Tek seferlik prompt yerine tekrar kullanılabilir üretim sistemleri kur.</p></article>
-          <article class="mini"><h3>Mentörlük</h3><p>Takıldığın noktada yönlendirme, revizyon ve üretim geri bildirimi.</p></article>
-        </div>
-      </div>
-    </section>
+<section id="academy">
+<div class="wrap academy">
+<div class="section-head"><h2>UGC & AI<br>Collaby Academy</h2><p>Akademinin sunduğu eğitim yapısı ile benim kişisel desteğimi birbirinden ayrı anlatıyorum.</p></div>
+<div class="academy-grid">
+<article class="academy-card"><strong>01 · AKADEMİ</strong><h3>Eğitim ekosistemi</h3><p>UGC, yapay zekâ ve dijital dünyaya yönelik akademi programının sunduğu eğitim ve program kapsamı.</p></article>
+<article class="academy-card"><strong>02 · BENİM DESTEĞİM</strong><h3>Eğitim akademiden, kişisel destek benden.</h3><p>Ben ise pazarlama ve AI görsel dil oluşturma alanlarında kendi bilgi ve deneyimlerim doğrultusunda kişisel mentörlük desteği sunuyorum.</p></article>
+<article class="academy-card"><strong>03 · PARTNERLİK</strong><h3>Öğrenci & partner</h3><p>Akademinin öğrencisi ve partneriyim. Bu site akademinin resmî web sitesi değildir.</p></article>
+<article class="academy-card"><strong>04 · AÇIKLIK</strong><h3>Gerçekçi beklenti</h3><p>Akademi veya MatchAI üzerinden eşleşme, gelir ya da sonuç garantisi sunulmaz.</p></article>
+</div>
+</div>
+</section>
 
-    <section>
-      <div class="wrap">
-        <div class="section-head"><h2>Öğrenirken<br/>üret.</h2><p>Akademinin merkezinde teori değil, çıktıya dönüşen üretim var.</p></div>
-        <div class="grid3">
-          <article class="card"><h3>İçerik fikri</h3><p>Trendleri körü körüne kopyalamadan kendi yaratıcı açını kur.</p></article>
-          <article class="card"><h3>AI workflow</h3><p>Metinden görsele, görselden videoya uzanan üretim zincirini kur.</p></article>
-          <article class="card"><h3>Sunum & portföy</h3><p>Ürettiğin içeriği markanın anlayacağı şekilde paketle.</p></article>
-        </div>
-      </div>
-    </section>
+<section id="mentorluk">
+<div class="wrap">
+<div class="section-head"><h2>Mentörlük<br>desteğim.</h2><p>Akademi programına benim aracılığımla başladığında, kişisel mentörlük desteğim programa ek ücret olmadan dahildir.</p></div>
+<div class="mentor">
+<div class="mentor-main">
+<h3>Tek başına öğrenmek zorunda değilsin.</h3>
+<p>Öğrenme sürecinde edindiğim bilgi ve deneyimler doğrultusunda özellikle <b>pazarlama</b> ve <b>AI görsel dil oluşturma</b> alanlarında kişisel destek sunuyorum.</p>
+<div class="mentor-price"><b>369 USD Kapsamlı Partner Programı</b><span>Benim aracılığımla başladığında kişisel mentörlük desteğim ek ücret olmadan dahildir.</span></div>
+<a class="btn" href="https://www.shopier.com/m/products.php" target="_blank" rel="noopener">Benimle Başla ↗</a>
+</div>
+<div class="mentor-side">
+<article class="mini"><h4>Pazarlama</h4><p>Dijital pazarlama konusunda öğrendiklerim ve deneyimlerim doğrultusunda kişisel destek.</p></article>
+<article class="mini"><h4>AI görsel dil</h4><p>Yapay zekâ ile görsel üretimde fikir, yön ve görsel dil oluşturma konusunda destek.</p></article>
+<article class="mini"><h4>UGC</h4><p>UGC dünyasını öğrenme ve üretim sürecinde başlangıç seviyesine uygun rehberlik.</p></article>
+<article class="mini"><h4>Girişimcilik</h4><p>Yeni başlayanların yolculuğunda kendi deneyimlerim üzerinden eşlik.</p></article>
+</div>
+</div>
+</div>
+</section>
 
-    <section id="sss">
-      <div class="wrap">
-        <div class="section-head"><h2>Merak edilenler</h2><p>Başlamadan önce en çok sorulan konular.</p></div>
-        <div class="faq">
-          <details><summary>Hiç deneyimim yok, başarabilir miyim?</summary><p>Evet. Eğitim akışı temel kavramlardan başlar ve uygulama adımlarını kademeli olarak ilerletir.</p></details>
-          <details><summary>Mentörlük ücretli mi?</summary><p>Mentörlük modeli ve kapsamı seçilen programa göre ayrıca belirtilir.</p></details>
-          <details><summary>Telefonla içerik üretebilir miyim?</summary><p>Temel UGC üretimlerinin büyük bölümü mobil cihazla planlanabilecek şekilde kurgulanabilir.</p></details>
-          <details><summary>Portföyüm yoksa ne olacak?</summary><p>Program boyunca ürettiğin çalışmalar, düzenlenerek başlangıç portföyüne dönüştürülebilir.</p></details>
-        </div>
-      </div>
-    </section>
+<section id="calismalar">
+<div class="wrap">
+<div class="section-head"><h2>Çalışmalarım</h2><p>Yapay zekâ ile fikirleri görsele, görselleri hikâyeye dönüştürdüğüm konsept çalışmalar.</p></div>
+<div class="works">
+<article class="work main"><img src="assets/work-product.jpg" alt="AI ile oluşturulmuş ürün ve UGC konsepti" loading="lazy"><span class="work-label">AI · UGC konsepti</span></article>
+<article class="work"><img src="assets/work-bird.jpg" alt="AI ile oluşturulmuş yaratıcı portre konsepti" loading="lazy"><span class="work-label">AI · Creative</span></article>
+<article class="work"><img src="assets/work-fashion.jpg" alt="AI ile oluşturulmuş moda editorial konsepti" loading="lazy"><span class="work-label">AI · Editorial</span></article>
+<article class="work bottom"><img src="assets/work-bath.jpg" alt="AI ile oluşturulmuş lifestyle ve self-care konsepti" loading="lazy"><span class="work-label">AI · Lifestyle / Self-care</span></article>
+</div>
+<p style="font-size:12px;color:var(--muted);margin-top:16px">Not: Bu alan konsept/AI çalışmalarını gösterir; çalışmalar müşteri işi veya marka işbirliği olarak sunulmamaktadır.</p>
+</div>
+</section>
 
-    <section id="basla">
-      <div class="wrap cta">
-        <div><div class="eyebrow" style="color:#e79b87">SONRAKİ ADIM</div><h2 style="font-size:clamp(38px,5vw,64px);line-height:1;letter-spacing:-.05em;margin:16px 0">Kendi üretim sistemini kurmaya başla.</h2><p>Academy deneyimini hedefin, seviyen ve üretim alanın üzerinden şekillendir.</p></div>
-        <a class="btn" href="mailto:hello@example.com">Bilgi al</a>
-      </div>
-    </section>
-  </main>
+<section>
+<div class="wrap match">
+<div class="match-grid">
+<div><div class="eyebrow" style="color:#c8b5e8">ACADEMY · MATCHAI</div><h2>Üretiminle markalarla buluş.</h2><p>MatchAI, akademiye özel, markalarla içerik üreticilerinin eşleşmeler gerçekleştirdiği platformdur.</p><p class="disclaimer"><b>Eşleşme ya da gelir garantisi sunulmaz.</b></p></div>
+<div><img src="assets/matchai.jpg" alt="MatchAI görseli" loading="lazy"></div>
+</div>
+</div>
+</section>
 
-  <footer class="wrap">© 2026 UGC & AI Collaby Academy · Eğitim · UGC · AI Creative</footer>
+<section id="sss">
+<div class="wrap">
+<div class="section-head"><h2>Sık sorulan<br>sorular.</h2><p>Başlamadan önce bilmek isteyebileceğin temel bilgiler.</p></div>
+<div class="faq">
+<details><summary>Hiç deneyimim yok. Başlayabilir miyim?</summary><p>Bu sayfa, sıfırdan başlayıp UGC, yapay zekâ ve dijital pazarlamayı öğrenmek isteyenler için hazırlandı. Katılmadan önce hedeflerini ve programın kapsamını birlikte değerlendirebiliriz.</p></details>
+<details><summary>Mentörlük ayrıca ücretli mi?</summary><p>Hayır. 369 USD tutarındaki UGC & AI Collaby Academy Kapsamlı Partner Programı'na benim aracılığımla başladığında kişisel mentörlük desteğim ek ücret olmadan programa dahildir.</p></details>
+<details><summary>MatchAI nedir?</summary><p>MatchAI, akademiye özel, markalarla içerik üreticilerinin eşleşmeler gerçekleştirdiği platformdur. Eşleşme ya da gelir garantisi sunulmaz.</p></details>
+<details><summary>Bu, akademinin resmî web sitesi mi?</summary><p>Hayır. Bu, Nesrin Çiftçi'nin kişisel web sitesidir. Akademinin öğrencisi ve partneriyim. Burada kendi çalışmalarımı, deneyimlerimi ve sunduğum kişisel desteği paylaşıyorum.</p></details>
+<details><summary>Academy ile senin desteğinin farkı ne?</summary><p>Akademi, kendi eğitim içeriklerini ve paket kapsamındaki hakları sunar. Ben ise pazarlama ve AI görsel dil oluşturma alanlarında kişisel destek veriyorum.</p></details>
+</div>
+</div>
+</section>
+
+<section id="basla">
+<div class="wrap final">
+<div class="eyebrow">SONRAKİ ADIM</div>
+<h2>Sen de kendi yolculuğuna başlayabilirsin.</h2>
+<p>UGC, yapay zekâ ve dijital pazarlama alanında sıfırdan başlamak istiyorsan, programı birlikte değerlendirebiliriz.</p>
+<a class="btn" href="https://www.shopier.com/m/products.php" target="_blank" rel="noopener">Benimle Başla, Akademiye Kat ↗</a>
+</div>
+</section>
+</main>
+
+<footer class="wrap footer">
+<div><b style="color:var(--ink)">Nesrin Çiftçi</b><br>Kişisel profesyonel web sitesi<br>UGC & AI Collaby Academy Öğrencisi & Partneri</div>
+<div><a class="social" href="https://www.instagram.com/glow.withnesai/" target="_blank" rel="noopener">@glow.withnesai ↗</a><br><span>© 2026 Nesrin Çiftçi</span></div>
+</footer>
+<div class="mobile-cta"><a class="btn" href="https://www.shopier.com/m/products.php" target="_blank" rel="noopener">Benimle Başla, Akademiye Kat ↗</a></div>
 </body>
 </html>
